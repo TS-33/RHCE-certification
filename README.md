@@ -1,6 +1,16 @@
-这是一篇关于我学习考取RHCE认证的文档，我放入了我得到的各类资源：包括我自建的笔记、网站资源...
+This is a document about my learning to obtain RHCE certification. I have included various resources I have obtained, including my own notes and website resources
+ ..
 
-## 1.使用方法
+## 1. Usage method
 
-如果你已经掌握有linux和ansible的知识，那么我推荐你直接简略看一遍Pdf文件夹下的RHCEbook.pdf文档,
+Note folder: records my notes
 
+Pdf folder: storing lesson plans
+
+
+
+If you already have knowledge of Linux and Ansible, I recommend that you start practicing exercises directly or briefly review the RHCEbook.pdf document in the PDF folder.
+
+
+
+#I haven't finished it yet
