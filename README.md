@@ -1,3 +1,6 @@
+![zoro](https://www.redhat.com/favicon.ico)
+
+https://www.redhat.com/en
 This is a document about my learning to obtain RHCE certification. I have included various resources I have obtained, including my own notes and website resources
  ..
 
@@ -14,3 +17,4 @@ If you already have knowledge of Linux and Ansible, I recommend that you start p
 
 
 #I haven't finished it yet
+
