@@ -1,0 +1,24 @@
+- name: 建立逻辑卷
+  hosts: all
+  gather_facts: no
+  tasks:
+    - block:
+        - name: Create a logical volume of 512m
+          lvol:
+            vg: vg0
+            lv: lv0
+            size: 512m
+        - debug: 
+            msg: 'block end'
+      rescue:
+        - debug:
+            msg: "lv create failed,now try 256m"
+        - name: Create a logical volume of 256m
+          lvol:
+            vg: vg0
+            lv: lv0
+            size: 256m
+      always:
+        - shell: mkfs.xfs /dev/vg0/lv0
+        - debug:
+            msg: "tasks end"

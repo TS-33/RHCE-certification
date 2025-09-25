@@ -1,0 +1,12 @@
+- name: 通过vars 定义变量
+  hosts: all
+  gather_facts: no
+  vars:
+    path: "/opt/test2"
+  tasks:
+    - debug:
+        msg: okok!!
+      when: path is defined
+    - debug:
+        msg: nono!!
+      when : path is undefined

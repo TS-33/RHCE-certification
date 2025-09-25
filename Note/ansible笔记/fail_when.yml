@@ -1,0 +1,14 @@
+- name: 测试fail模块
+  hosts: all
+  gather_facts: no
+  tasks: 
+    - shell: useradd test
+      ignore_errors: yes
+      register: shell_1
+    - fail: 
+        msg: useradd test failed!!
+      when: shell_1.rc != 0
+    - debug:
+        msg: opration 2
+    - debug:
+        msg: opration 3

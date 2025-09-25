@@ -1,0 +1,9 @@
+- name: 创建用户 设置密码...
+  hosts: all
+  gather_facts: no
+  tasks:
+    - user:
+        name: guest
+        password: "{{ '123.com'|password_hash('sha512') }}"
+        uid: 2000
+        shell: /bin/bash

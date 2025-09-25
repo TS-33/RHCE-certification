@@ -1,0 +1,14 @@
+- name: loop 循环子选项
+  gather_facts: no
+  vars: 
+    files: 
+      - /opt/f1
+      - /opt/f2
+      - /opt/f3
+  hosts: all
+  tasks: 
+    - file:
+        path: "{{ item }}"
+        state: touch
+      loop: "{{ files }}"
+  

@@ -1,0 +1,14 @@
+- name: block模块实现when的整体判断
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - block:
+        - debug: 
+            msg: 'operation 1'
+        - debug:
+            msg: 'operation 2'
+        - debug:
+            msg: 'operation 3'
+        - debug:
+            msg: 'operation 4'
+      when: ansible_distribution == 'CentOS'

@@ -1,0 +1,13 @@
+- name: 通过gather_facts 禁用/启用 setup模块
+  hosts: all
+  gather_facts: no
+  vars:
+    path: "/opt/test2"
+  tasks:
+    - file:
+        path: "{{ path }}"
+        state: touch
+      register: file_task
+    - debug:
+        msg: "touch success!!"
+      when: file_task is success

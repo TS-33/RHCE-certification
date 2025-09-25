@@ -1,0 +1,12 @@
+- name: 测试failed_when子选项
+  hosts: all
+  gather_facts: no
+  tasks: 
+    - shell: useradd test
+      register: shell_1
+      failed_when: shell_1.rc != 0
+    - debug:
+        msg: opration 2
+    - debug:
+        msg: opration 3
+    

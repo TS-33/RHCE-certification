@@ -1,0 +1,7 @@
+- name: template模块拷贝文件,会识别文件中的jinja2语句
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - template: 
+        src: ./hosts.j2
+        dest: /etc/hosts 

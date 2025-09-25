@@ -1,0 +1,14 @@
+- name: register子选项:将任务返回值设置为变量
+  hosts: all
+  vars:
+    path: "/etc"
+  tasks:
+    - debug:
+        msg: "test OK!!"
+      when: path is directory
+    - shell: useradd test
+      register: useradd
+      ignore_errors: true
+    - debug:
+        msg: "useradd faild!!"
+      when: useradd.rc != 0

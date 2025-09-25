@@ -1,0 +1,13 @@
+- name: 判断元素是否在集合内
+  hosts: all
+  gather_facts: yes
+  vars:
+    os: 
+      - RedHat
+      - CentOS
+      - OpenEuler
+      - Windows
+  tasks:
+    - debug:
+        msg: 'OS valid'
+      when: ansible_distribution in os

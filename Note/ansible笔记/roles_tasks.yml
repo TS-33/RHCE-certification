@@ -1,0 +1,9 @@
+---
+# tasks file for test
+- user:
+    name: user1
+    password: "{{ 'flectrag'|password_hash('sha512') }}"
+- lineinfile:
+    path: /etc/hosts
+    line: 192.168.36.1 pm
+    

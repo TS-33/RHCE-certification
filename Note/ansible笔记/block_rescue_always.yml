@@ -1,0 +1,18 @@
+- name: block模块与rescue模块
+  hosts: all
+  gather_facts: no
+  tasks:
+    - block:
+        - debug: 
+            msg: 'block start'
+        - shell: useradd test
+          ignore_errors: true
+        - debug: 
+            msg: 'block end'
+      rescue:
+        - debug:
+            msg: "block has a error!!"
+        - shell: id test
+      always:
+        - debug:
+            msg: "tasks end"

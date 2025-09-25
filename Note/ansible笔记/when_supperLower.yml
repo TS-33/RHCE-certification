@@ -1,0 +1,12 @@
+- name: when条件判断
+  hosts: all
+  gather_facts: no
+  vars:
+    xixi: "REDHAT"
+  tasks:
+    - debug:
+        msg: 'var is upper!!'
+      when: xixi is upper 
+    - debug:
+        msg: 'var is lower!!'
+      when: xixi is lower

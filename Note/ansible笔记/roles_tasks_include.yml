@@ -1,0 +1,9 @@
+---
+# 包含tasks目录下的多个yaml文件,降低耦合度
+- include_tasks: 
+    file: users.yml
+- include_tasks: 
+    file: lineinfile.yml
+- include_tasks: 
+    file: debug.yml
+    

@@ -1,0 +1,19 @@
+- name: 判断集合1是否是集合2的子集
+  hosts: all
+  gather_facts: no
+  vars:
+    os: 
+      - redhat
+      - centos
+      - openeuler
+      - windows
+    os2:
+      - redhat
+      - windows
+  tasks:
+    - debug:
+        msg: 'os include os2'
+      when: os is superset(os2)
+    - debug:
+        msg: 'os2 include os'
+      when: os is subset(os2)
