@@ -1,4 +1,4 @@
-- name: 建立逻辑卷
+- name: Create a logical volume
   hosts: all
   gather_facts: no
   tasks:

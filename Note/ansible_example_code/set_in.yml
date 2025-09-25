@@ -1,4 +1,4 @@
-- name: 判断元素是否在集合内
+- name: Use 'in' to check if a value exists in a list
   hosts: all
   gather_facts: yes
   vars:

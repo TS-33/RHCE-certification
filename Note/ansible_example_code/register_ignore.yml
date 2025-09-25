@@ -1,4 +1,4 @@
-- name: register子选项:将任务返回值设置为变量
+- name: register and ignore_errors example
   hosts: all
   vars:
     path: "/etc"

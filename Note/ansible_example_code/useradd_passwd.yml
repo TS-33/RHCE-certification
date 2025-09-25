@@ -1,4 +1,4 @@
-- name: 创建用户 设置密码...
+- name: useradd and set password example
   hosts: all
   gather_facts: no
   tasks:

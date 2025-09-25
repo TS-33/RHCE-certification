@@ -1,4 +1,4 @@
-- name: with_dict 循环子选项
+- name: with_dict example, it is similar to loop a dict example, but with_dict is an older syntax.
   gather_facts: no
   vars: 
     users: 

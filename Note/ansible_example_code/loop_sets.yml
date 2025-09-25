@@ -1,4 +1,4 @@
-- name: loop 循环子选项
+- name: loop a set of files example
   gather_facts: no
   vars: 
     files: 

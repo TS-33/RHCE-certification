@@ -1,4 +1,4 @@
-- name: with_items 循环子选项
+- name: with_items example, used to loop a list.
   gather_facts: no
   vars: 
     files: 

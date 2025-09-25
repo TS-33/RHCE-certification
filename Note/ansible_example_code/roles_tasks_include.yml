@@ -1,5 +1,6 @@
 ---
-# 包含tasks目录下的多个yaml文件,降低耦合度
+# This playbook demonstrates how to include tasks from other YAML files.
+
 - include_tasks: 
     file: users.yml
 - include_tasks: 

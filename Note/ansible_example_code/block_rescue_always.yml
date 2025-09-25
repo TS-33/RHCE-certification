@@ -1,4 +1,4 @@
-- name: block模块与rescue模块
+- name: block module and rescue and always example
   hosts: all
   gather_facts: no
   tasks:

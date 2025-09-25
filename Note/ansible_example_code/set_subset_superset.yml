@@ -1,4 +1,4 @@
-- name: 判断集合1是否是集合2的子集
+- name: set subset superset example
   hosts: all
   gather_facts: no
   vars:

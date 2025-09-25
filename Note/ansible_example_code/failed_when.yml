@@ -1,4 +1,4 @@
-- name: 测试failed_when子选项
+- name: test failed_when child module
   hosts: all
   gather_facts: no
   tasks: 

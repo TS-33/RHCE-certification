@@ -1,4 +1,4 @@
-- name: 通过vars 定义变量
+- name: define var example
   hosts: all
   gather_facts: no
   vars:

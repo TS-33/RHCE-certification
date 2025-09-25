@@ -1,4 +1,4 @@
-- name: 通过gather_facts 禁用/启用 setup模块
+- name: var example, gather_facts no, and register example
   hosts: all
   gather_facts: no
   vars:

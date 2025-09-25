@@ -1,3 +1,5 @@
-{% for ip in ips %}
+{# Ansible Jinja2 template example using for loop #}
 
+{% for i in groups.all %}
+{{ hostvars[i].ansible_hostname }}'s IPaddress={{ ansible_default_ipv4.address }}
 {%endfor%}

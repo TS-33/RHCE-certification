@@ -1,4 +1,4 @@
-- name: block模块实现when的整体判断
+- name: Implement overall condition judgment with the block module
   hosts: all
   gather_facts: yes
   tasks:

@@ -1,4 +1,4 @@
-- name: loop 循环子选项：字典
+- name: loop a dict example
   gather_facts: no
   vars: 
     users: 

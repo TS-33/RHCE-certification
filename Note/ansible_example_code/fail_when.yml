@@ -1,4 +1,4 @@
-- name: 测试fail模块
+- name: test a fail module
   hosts: all
   gather_facts: no
   tasks: 

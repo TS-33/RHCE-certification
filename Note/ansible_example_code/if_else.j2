@@ -1,3 +1,7 @@
+{# This template checks if the 'ansible_ens33' or 'ansible_eth0' network interfaces are defined. 
+    It sets the 'Listen' directive to the respective IP address on port 80. 
+    If neither interface is defined, it defaults to listening on 0.0.0.0:80. #}
+    
 {% if ansible_ens33 is defined %}
 Listen {{ ansible_ens33.ipv4.address }}:80
 {% elif ansible_eth0 is defined %}

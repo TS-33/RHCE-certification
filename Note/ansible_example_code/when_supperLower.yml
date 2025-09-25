@@ -1,4 +1,4 @@
-- name: when条件判断
+- name: when upper/lower example, used to check a string is upper or lower.
   hosts: all
   gather_facts: no
   vars:
